@@ -1,0 +1,123 @@
+/* 🌸 prak3.css — Cute Pastel Theme */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafc;
+    background-image: radial-gradient(circle at top left, #ffe6f2 0%, transparent 40%), 
+                      radial-gradient(circle at bottom right, #e0f7fa 0%, transparent 40%);
+    color: #333;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌷 Kontainer utama */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffffc9;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+    text-align: center;
+}
+
+/* Judul */
+h2 {
+    color: #ff80ab;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 🌼 Input & tombol tambah */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffd6e0;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    border-color: #ffb6c1;
+    background-color: #fff0f5;
+}
+
+button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #ff99aa;
+    transform: scale(1.05);
+}
+
+/* 🌻 Daftar tugas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff0f5;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);
+    font-size: 15px;
+}
+
+/* Checkbox gaya imut */
+li::before {
+    content: '💖';
+    margin-right: 8px;
+}
+
+/* 🌙 Mode gelap */
+.dark-mode {
+    background-color: #2c2c54;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background: #3a3a6a;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode button {
+    background-color: #9a82ff;
+}
+
+.dark-mode li {
+    background-color: #4b4b80;
+}
+
+/* 🎀 Area kontrol */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+select {
+    border-radius: 10px;
+    border: 2px solid #ffb6c1;
+    padding: 8px;
+    background-color: #fffafc;
+    color: #333;
+    margin: 3px;
+    font-size: 13px;
+}
